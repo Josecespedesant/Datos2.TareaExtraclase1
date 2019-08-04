@@ -17,6 +17,10 @@ bool LinkedList::isEmpty() {
     return head == NULL;
 }
 
+/**
+ * Obtiene el largo de la lista
+ * @return len
+ */
 int LinkedList::getLen() {
     return len;
 }
