@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/josecespedes/CLionProjects/datos2_tarea_extraclase_1_server/LinkedList.cpp
+LinkedList.h
+/home/josecespedes/CLionProjects/datos2_tarea_extraclase_1_server/LinkedList.h
+iostream
+-
+cstdlib
+-
+
+/home/josecespedes/CLionProjects/datos2_tarea_extraclase_1_server/LinkedList.h
+iostream
+-
+

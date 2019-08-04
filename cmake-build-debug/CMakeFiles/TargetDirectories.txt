@@ -1,0 +1,3 @@
+/home/josecespedes/CLionProjects/datos2_tarea_extraclase_1_server/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/josecespedes/CLionProjects/datos2_tarea_extraclase_1_server/cmake-build-debug/CMakeFiles/datos2_tarea_extraclase_1_server.dir
+/home/josecespedes/CLionProjects/datos2_tarea_extraclase_1_server/cmake-build-debug/CMakeFiles/edit_cache.dir
