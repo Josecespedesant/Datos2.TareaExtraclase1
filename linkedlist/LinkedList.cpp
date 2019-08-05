@@ -5,6 +5,7 @@
 #include "LinkedList.h"
 #include <iostream>
 #include <cstdlib>
+#include <cstring>
 
 using namespace std;
 
@@ -108,4 +109,24 @@ LinkedList::~LinkedList() {
         delete current;
         current = next;
     }
+}
+
+char* LinkedList::listToChar() {
+    string final;
+    if(head == NULL){
+        return NULL;
+    }
+    else{
+        Node* aux = head;
+        while(aux != NULL){
+            final = final + std::to_string(aux->getData())+"_";
+            aux = aux->getNext();
+        }
+    }
+
+    char *finalchar = new char[final.size()+1];
+    strcpy(finalchar, final.c_str());
+
+    return finalchar;
+
 }

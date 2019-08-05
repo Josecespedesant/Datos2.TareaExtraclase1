@@ -6,13 +6,15 @@
 
 #IncludeRegexTransform: 
 
-/home/josecespedes/CLionProjects/datos2_tarea_extraclase_1_server/binarysearchtree/BinarySearchTree.h
+/home/josecespedes/CLionProjects/datos2_tarea_extraclase_1_server/linkedlist/LinkedList.cpp
+LinkedList.h
+/home/josecespedes/CLionProjects/datos2_tarea_extraclase_1_server/linkedlist/LinkedList.h
 iostream
 -
 cstdlib
 -
-Node.h
-/home/josecespedes/CLionProjects/datos2_tarea_extraclase_1_server/binarysearchtree/Node.h
+cstring
+-
 
 /home/josecespedes/CLionProjects/datos2_tarea_extraclase_1_server/linkedlist/LinkedList.h
 iostream
@@ -21,22 +23,4 @@ Node.h
 /home/josecespedes/CLionProjects/datos2_tarea_extraclase_1_server/linkedlist/Node.h
 
 /home/josecespedes/CLionProjects/datos2_tarea_extraclase_1_server/linkedlist/Node.h
-
-/home/josecespedes/CLionProjects/datos2_tarea_extraclase_1_server/main.cpp
-unistd.h
--
-stdio.h
--
-sys/socket.h
--
-stdlib.h
--
-netinet/in.h
--
-string.h
--
-linkedlist/LinkedList.h
-/home/josecespedes/CLionProjects/datos2_tarea_extraclase_1_server/linkedlist/LinkedList.h
-binarysearchtree/BinarySearchTree.h
-/home/josecespedes/CLionProjects/datos2_tarea_extraclase_1_server/binarysearchtree/BinarySearchTree.h
 

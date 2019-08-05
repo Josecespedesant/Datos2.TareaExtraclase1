@@ -12,6 +12,14 @@ using namespace std;
 
 int main(int argc, char const *argv[]) {
 
+
+    LinkedList *L = new LinkedList;
+    L->addFirst(4);
+    L->addFirst(3);
+    L->addFirst(2);
+    L->addFirst(1);
+    cout << L->listToChar() << endl;
+/*
     int server_fd, new_socket, valread;
     struct sockaddr_in address;
     int opt = 1;
@@ -59,5 +67,6 @@ int main(int argc, char const *argv[]) {
     send(new_socket , hello , strlen(hello) , 0 );
     printf("Hello message sent\n");
     return 0;
+*/
 
 }

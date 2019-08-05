@@ -6,6 +6,7 @@
 #define DATOS2_TAREA_EXTRACLASE_1_SERVER_LINKEDLIST_H
 
 #include "Node.h"
+using namespace std;
 
 class LinkedList {
 
@@ -22,6 +23,7 @@ public:
     void printList();
     int getLen();
     ~LinkedList();
+    char* listToChar();
 };
 
 
