@@ -5,15 +5,23 @@
 #ifndef DATOS2_TAREA_EXTRACLASE_1_SERVER_BINARYSEARCHTREE_H
 #define DATOS2_TAREA_EXTRACLASE_1_SERVER_BINARYSEARCHTREE_H
 
+#include <iostream>
+#include <cstdlib>
 #include "Node.h"
+using namespace std;
 
 class BinarySearchTree {
 private:
-    Node root;
+    Node* root;
 
 public:
-    void insertNode(int data);
-    void deleteNode(int data);
+    BinarySearchTree();
+    bool isEmpty() const { return root==NULL; }
+    void print_inorder();
+    void inorder(Node* nodo);
+    void insert(int data);
+    void remove(int data);
+
 
 };
 

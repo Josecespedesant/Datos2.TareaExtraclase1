@@ -5,21 +5,13 @@
 #include <netinet/in.h>
 #include <string.h>
 #include "linkedlist/LinkedList.h"
-
+#include "binarysearchtree/BinarySearchTree.h"
 #define PORT 8080
 
 using namespace std;
 
 int main(int argc, char const *argv[]) {
 
-    LinkedList *l = new LinkedList();
-    l->addFirst(30);
-    l->addFirst(20);
-    l->addFirst(10);
-    cout << l->getByPos(1);
-    //l->printList();
-
-/*
     int server_fd, new_socket, valread;
     struct sockaddr_in address;
     int opt = 1;
@@ -67,7 +59,5 @@ int main(int argc, char const *argv[]) {
     send(new_socket , hello , strlen(hello) , 0 );
     printf("Hello message sent\n");
     return 0;
-*/
-
 
 }

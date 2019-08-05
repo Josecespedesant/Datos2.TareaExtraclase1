@@ -6,6 +6,14 @@
 
 #IncludeRegexTransform: 
 
+/home/josecespedes/CLionProjects/datos2_tarea_extraclase_1_server/binarysearchtree/BinarySearchTree.h
+iostream
+-
+cstdlib
+-
+Node.h
+/home/josecespedes/CLionProjects/datos2_tarea_extraclase_1_server/binarysearchtree/Node.h
+
 /home/josecespedes/CLionProjects/datos2_tarea_extraclase_1_server/linkedlist/LinkedList.h
 iostream
 -
@@ -29,4 +37,6 @@ string.h
 -
 linkedlist/LinkedList.h
 /home/josecespedes/CLionProjects/datos2_tarea_extraclase_1_server/linkedlist/LinkedList.h
+binarysearchtree/BinarySearchTree.h
+/home/josecespedes/CLionProjects/datos2_tarea_extraclase_1_server/binarysearchtree/BinarySearchTree.h
 
