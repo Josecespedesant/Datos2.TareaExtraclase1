@@ -123,32 +123,113 @@ datos2_tarea_extraclase_1_server/fast:
 	$(MAKE) -f CMakeFiles/datos2_tarea_extraclase_1_server.dir/build.make CMakeFiles/datos2_tarea_extraclase_1_server.dir/build
 .PHONY : datos2_tarea_extraclase_1_server/fast
 
-LinkedList.o: LinkedList.cpp.o
+binarysearchtree/BinarySearchTree.o: binarysearchtree/BinarySearchTree.cpp.o
 
-.PHONY : LinkedList.o
+.PHONY : binarysearchtree/BinarySearchTree.o
 
 # target to build an object file
-LinkedList.cpp.o:
-	$(MAKE) -f CMakeFiles/datos2_tarea_extraclase_1_server.dir/build.make CMakeFiles/datos2_tarea_extraclase_1_server.dir/LinkedList.cpp.o
-.PHONY : LinkedList.cpp.o
+binarysearchtree/BinarySearchTree.cpp.o:
+	$(MAKE) -f CMakeFiles/datos2_tarea_extraclase_1_server.dir/build.make CMakeFiles/datos2_tarea_extraclase_1_server.dir/binarysearchtree/BinarySearchTree.cpp.o
+.PHONY : binarysearchtree/BinarySearchTree.cpp.o
 
-LinkedList.i: LinkedList.cpp.i
+binarysearchtree/BinarySearchTree.i: binarysearchtree/BinarySearchTree.cpp.i
 
-.PHONY : LinkedList.i
+.PHONY : binarysearchtree/BinarySearchTree.i
 
 # target to preprocess a source file
-LinkedList.cpp.i:
-	$(MAKE) -f CMakeFiles/datos2_tarea_extraclase_1_server.dir/build.make CMakeFiles/datos2_tarea_extraclase_1_server.dir/LinkedList.cpp.i
-.PHONY : LinkedList.cpp.i
+binarysearchtree/BinarySearchTree.cpp.i:
+	$(MAKE) -f CMakeFiles/datos2_tarea_extraclase_1_server.dir/build.make CMakeFiles/datos2_tarea_extraclase_1_server.dir/binarysearchtree/BinarySearchTree.cpp.i
+.PHONY : binarysearchtree/BinarySearchTree.cpp.i
 
-LinkedList.s: LinkedList.cpp.s
+binarysearchtree/BinarySearchTree.s: binarysearchtree/BinarySearchTree.cpp.s
 
-.PHONY : LinkedList.s
+.PHONY : binarysearchtree/BinarySearchTree.s
 
 # target to generate assembly for a file
-LinkedList.cpp.s:
-	$(MAKE) -f CMakeFiles/datos2_tarea_extraclase_1_server.dir/build.make CMakeFiles/datos2_tarea_extraclase_1_server.dir/LinkedList.cpp.s
-.PHONY : LinkedList.cpp.s
+binarysearchtree/BinarySearchTree.cpp.s:
+	$(MAKE) -f CMakeFiles/datos2_tarea_extraclase_1_server.dir/build.make CMakeFiles/datos2_tarea_extraclase_1_server.dir/binarysearchtree/BinarySearchTree.cpp.s
+.PHONY : binarysearchtree/BinarySearchTree.cpp.s
+
+binarysearchtree/Node.o: binarysearchtree/Node.cpp.o
+
+.PHONY : binarysearchtree/Node.o
+
+# target to build an object file
+binarysearchtree/Node.cpp.o:
+	$(MAKE) -f CMakeFiles/datos2_tarea_extraclase_1_server.dir/build.make CMakeFiles/datos2_tarea_extraclase_1_server.dir/binarysearchtree/Node.cpp.o
+.PHONY : binarysearchtree/Node.cpp.o
+
+binarysearchtree/Node.i: binarysearchtree/Node.cpp.i
+
+.PHONY : binarysearchtree/Node.i
+
+# target to preprocess a source file
+binarysearchtree/Node.cpp.i:
+	$(MAKE) -f CMakeFiles/datos2_tarea_extraclase_1_server.dir/build.make CMakeFiles/datos2_tarea_extraclase_1_server.dir/binarysearchtree/Node.cpp.i
+.PHONY : binarysearchtree/Node.cpp.i
+
+binarysearchtree/Node.s: binarysearchtree/Node.cpp.s
+
+.PHONY : binarysearchtree/Node.s
+
+# target to generate assembly for a file
+binarysearchtree/Node.cpp.s:
+	$(MAKE) -f CMakeFiles/datos2_tarea_extraclase_1_server.dir/build.make CMakeFiles/datos2_tarea_extraclase_1_server.dir/binarysearchtree/Node.cpp.s
+.PHONY : binarysearchtree/Node.cpp.s
+
+linkedlist/LinkedList.o: linkedlist/LinkedList.cpp.o
+
+.PHONY : linkedlist/LinkedList.o
+
+# target to build an object file
+linkedlist/LinkedList.cpp.o:
+	$(MAKE) -f CMakeFiles/datos2_tarea_extraclase_1_server.dir/build.make CMakeFiles/datos2_tarea_extraclase_1_server.dir/linkedlist/LinkedList.cpp.o
+.PHONY : linkedlist/LinkedList.cpp.o
+
+linkedlist/LinkedList.i: linkedlist/LinkedList.cpp.i
+
+.PHONY : linkedlist/LinkedList.i
+
+# target to preprocess a source file
+linkedlist/LinkedList.cpp.i:
+	$(MAKE) -f CMakeFiles/datos2_tarea_extraclase_1_server.dir/build.make CMakeFiles/datos2_tarea_extraclase_1_server.dir/linkedlist/LinkedList.cpp.i
+.PHONY : linkedlist/LinkedList.cpp.i
+
+linkedlist/LinkedList.s: linkedlist/LinkedList.cpp.s
+
+.PHONY : linkedlist/LinkedList.s
+
+# target to generate assembly for a file
+linkedlist/LinkedList.cpp.s:
+	$(MAKE) -f CMakeFiles/datos2_tarea_extraclase_1_server.dir/build.make CMakeFiles/datos2_tarea_extraclase_1_server.dir/linkedlist/LinkedList.cpp.s
+.PHONY : linkedlist/LinkedList.cpp.s
+
+linkedlist/Node.o: linkedlist/Node.cpp.o
+
+.PHONY : linkedlist/Node.o
+
+# target to build an object file
+linkedlist/Node.cpp.o:
+	$(MAKE) -f CMakeFiles/datos2_tarea_extraclase_1_server.dir/build.make CMakeFiles/datos2_tarea_extraclase_1_server.dir/linkedlist/Node.cpp.o
+.PHONY : linkedlist/Node.cpp.o
+
+linkedlist/Node.i: linkedlist/Node.cpp.i
+
+.PHONY : linkedlist/Node.i
+
+# target to preprocess a source file
+linkedlist/Node.cpp.i:
+	$(MAKE) -f CMakeFiles/datos2_tarea_extraclase_1_server.dir/build.make CMakeFiles/datos2_tarea_extraclase_1_server.dir/linkedlist/Node.cpp.i
+.PHONY : linkedlist/Node.cpp.i
+
+linkedlist/Node.s: linkedlist/Node.cpp.s
+
+.PHONY : linkedlist/Node.s
+
+# target to generate assembly for a file
+linkedlist/Node.cpp.s:
+	$(MAKE) -f CMakeFiles/datos2_tarea_extraclase_1_server.dir/build.make CMakeFiles/datos2_tarea_extraclase_1_server.dir/linkedlist/Node.cpp.s
+.PHONY : linkedlist/Node.cpp.s
 
 main.o: main.cpp.o
 
@@ -186,9 +267,18 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... datos2_tarea_extraclase_1_server"
 	@echo "... edit_cache"
-	@echo "... LinkedList.o"
-	@echo "... LinkedList.i"
-	@echo "... LinkedList.s"
+	@echo "... binarysearchtree/BinarySearchTree.o"
+	@echo "... binarysearchtree/BinarySearchTree.i"
+	@echo "... binarysearchtree/BinarySearchTree.s"
+	@echo "... binarysearchtree/Node.o"
+	@echo "... binarysearchtree/Node.i"
+	@echo "... binarysearchtree/Node.s"
+	@echo "... linkedlist/LinkedList.o"
+	@echo "... linkedlist/LinkedList.i"
+	@echo "... linkedlist/LinkedList.s"
+	@echo "... linkedlist/Node.o"
+	@echo "... linkedlist/Node.i"
+	@echo "... linkedlist/Node.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

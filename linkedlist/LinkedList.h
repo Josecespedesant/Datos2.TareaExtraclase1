@@ -5,27 +5,20 @@
 #ifndef DATOS2_TAREA_EXTRACLASE_1_SERVER_LINKEDLIST_H
 #define DATOS2_TAREA_EXTRACLASE_1_SERVER_LINKEDLIST_H
 
+#include "Node.h"
 
 class LinkedList {
+
 private:
-    typedef struct Node{
-        int index;
-        int node_data;
-        Node *next;
-        int getIndex();
-
-    }* nodePtr;
-
     int len;
-    nodePtr head;
+    Node* head;
 
 public:
     LinkedList();
-    bool isEmpty();
     void addFirst(int data);
     void deleteFirst();
     void editByPos(int pos, int data);
-    void getByPos(int pos);
+    int getByPos(int pos);
     void printList();
     int getLen();
     ~LinkedList();

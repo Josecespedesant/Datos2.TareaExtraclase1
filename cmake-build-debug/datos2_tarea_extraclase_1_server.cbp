@@ -84,10 +84,28 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/josecespedes/CLionProjects/datos2_tarea_extraclase_1_server/LinkedList.cpp">
+		<Unit filename="/home/josecespedes/CLionProjects/datos2_tarea_extraclase_1_server/binarysearchtree/BinarySearchTree.cpp">
 			<Option target="datos2_tarea_extraclase_1_server"/>
 		</Unit>
-		<Unit filename="/home/josecespedes/CLionProjects/datos2_tarea_extraclase_1_server/LinkedList.h">
+		<Unit filename="/home/josecespedes/CLionProjects/datos2_tarea_extraclase_1_server/binarysearchtree/BinarySearchTree.h">
+			<Option target="datos2_tarea_extraclase_1_server"/>
+		</Unit>
+		<Unit filename="/home/josecespedes/CLionProjects/datos2_tarea_extraclase_1_server/binarysearchtree/Node.cpp">
+			<Option target="datos2_tarea_extraclase_1_server"/>
+		</Unit>
+		<Unit filename="/home/josecespedes/CLionProjects/datos2_tarea_extraclase_1_server/binarysearchtree/Node.h">
+			<Option target="datos2_tarea_extraclase_1_server"/>
+		</Unit>
+		<Unit filename="/home/josecespedes/CLionProjects/datos2_tarea_extraclase_1_server/linkedlist/LinkedList.cpp">
+			<Option target="datos2_tarea_extraclase_1_server"/>
+		</Unit>
+		<Unit filename="/home/josecespedes/CLionProjects/datos2_tarea_extraclase_1_server/linkedlist/LinkedList.h">
+			<Option target="datos2_tarea_extraclase_1_server"/>
+		</Unit>
+		<Unit filename="/home/josecespedes/CLionProjects/datos2_tarea_extraclase_1_server/linkedlist/Node.cpp">
+			<Option target="datos2_tarea_extraclase_1_server"/>
+		</Unit>
+		<Unit filename="/home/josecespedes/CLionProjects/datos2_tarea_extraclase_1_server/linkedlist/Node.h">
 			<Option target="datos2_tarea_extraclase_1_server"/>
 		</Unit>
 		<Unit filename="/home/josecespedes/CLionProjects/datos2_tarea_extraclase_1_server/main.cpp">

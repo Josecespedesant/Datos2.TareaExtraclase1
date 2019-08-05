@@ -4,9 +4,11 @@
 #include <stdlib.h>
 #include <netinet/in.h>
 #include <string.h>
-#include "LinkedList.h"
+#include "linkedlist/LinkedList.h"
 
 #define PORT 8080
+
+using namespace std;
 
 int main(int argc, char const *argv[]) {
 
@@ -14,10 +16,9 @@ int main(int argc, char const *argv[]) {
     l->addFirst(30);
     l->addFirst(20);
     l->addFirst(10);
-    l->printList();
+    cout << l->getByPos(1);
+    //l->printList();
 
-
-    return 0;
 /*
     int server_fd, new_socket, valread;
     struct sockaddr_in address;
