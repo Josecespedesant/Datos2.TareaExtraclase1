@@ -15,7 +15,6 @@ CMakeFiles/datos2_tarea_extraclase_1_server.dir/linkedlist/LinkedList.cpp.o: ../
 CMakeFiles/datos2_tarea_extraclase_1_server.dir/linkedlist/Node.cpp.o: ../linkedlist/Node.cpp
 CMakeFiles/datos2_tarea_extraclase_1_server.dir/linkedlist/Node.cpp.o: ../linkedlist/Node.h
 
-CMakeFiles/datos2_tarea_extraclase_1_server.dir/main.cpp.o: ../binarysearchtree/BinarySearchTree.h
 CMakeFiles/datos2_tarea_extraclase_1_server.dir/main.cpp.o: ../linkedlist/LinkedList.h
 CMakeFiles/datos2_tarea_extraclase_1_server.dir/main.cpp.o: ../linkedlist/Node.h
 CMakeFiles/datos2_tarea_extraclase_1_server.dir/main.cpp.o: ../main.cpp

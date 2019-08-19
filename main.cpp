@@ -4,28 +4,16 @@
 #include <stdlib.h>
 #include <netinet/in.h>
 #include <string.h>
+#include <sstream>
 #include "linkedlist/LinkedList.h"
-#include "binarysearchtree/BinarySearchTree.h"
 #define PORT 8080
 
-using namespace std;
-
 int main(int argc, char const *argv[]) {
-
-
-    LinkedList *L = new LinkedList;
-    L->addFirst(4);
-    L->addFirst(3);
-    L->addFirst(2);
-    L->addFirst(1);
-    cout << L->listToChar() << endl;
-/*
     int server_fd, new_socket, valread;
     struct sockaddr_in address;
     int opt = 1;
     int addrlen = sizeof(address);
     char buffer[1024] = {0};
-    char *hello = "Hello from server";
 
     // Creating socket file descriptor
     if ((server_fd = socket(AF_INET, SOCK_STREAM, 0)) == 0)
@@ -44,6 +32,7 @@ int main(int argc, char const *argv[]) {
     address.sin_family = AF_INET;
     address.sin_addr.s_addr = INADDR_ANY;
     address.sin_port = htons( PORT );
+
     // Forcefully attaching socket to the port 8080
     if (bind(server_fd, (struct sockaddr *)&address,
              sizeof(address))<0)
@@ -56,17 +45,74 @@ int main(int argc, char const *argv[]) {
         perror("listen");
         exit(EXIT_FAILURE);
     }
-    if ((new_socket = accept(server_fd, (struct sockaddr *)&address,
-                             (socklen_t*)&addrlen))<0)
-    {
-        perror("accept");
-        exit(EXIT_FAILURE);
+
+    LinkedList *l = new LinkedList();
+
+    for(;;){
+
+        memset(buffer,0,255);
+
+        new_socket = accept(server_fd, (struct sockaddr *)&address,
+                                (socklen_t*)&addrlen);
+        valread = read( new_socket , buffer, 1024);
+
+        if(buffer[0] == 'i'){
+            string bufferstring = buffer;
+            string cutstring = bufferstring.substr(1, strlen(buffer)-1);
+            int number;
+            std::istringstream iss (cutstring);
+            iss>>number;
+            l->addFirst(number);
+            l->printList();
+        }
+
+        if(strcmp(buffer, "delete") == 0){
+            l->deleteFirst();
+            l->printList();
+        }
+
+        if(buffer[0] == 'c'){
+            string bufferstring = buffer;
+            string cutstring = bufferstring.substr(1, strlen(buffer)-1);
+
+            string posS;
+            string valueS;
+
+            int i = 0;
+            while(i< sizeof(cutstring)){
+                while(cutstring[i]!='_'){
+                    posS += cutstring[i];
+                    i++;
+                }
+                valueS+=cutstring[i];
+                i++;
+            }
+
+            istringstream iss (posS);
+            istringstream iss2 (valueS);
+
+            int pos;
+            int value;
+
+            iss>>pos;
+            iss2>>value;
+
+            cout<<pos<<endl;
+            cout<<value<<endl;
+
+            l->editByPos(pos,value);
+            l->printList();
+        }
+
+        if(buffer[0]=='g'){
+
+        }
+
+        if(buffer[0] == 'p'){
+            l->printList();
+        }
+
+        sleep(1);
     }
-    valread = read( new_socket , buffer, 1024);
-    printf("%s\n",buffer );
-    send(new_socket , hello , strlen(hello) , 0 );
-    printf("Hello message sent\n");
-    return 0;
-*/
 
 }

@@ -1,5 +1,8 @@
 //
 // Created by josecespedes on 4/8/19.
+// Basadas en:
+// https://www.youtube.com/watch?v=H5lkmKkfjD0
+// https://www.codementor.io/codementorteam/a-comprehensive-guide-to-implementation-of-singly-linked-list-using-c_plus_plus-ondlm5azr
 //
 
 #include "LinkedList.h"
@@ -61,6 +64,12 @@ void LinkedList::editByPos(int pos, int data) {
         cout<<"Lista vacía";
         return;
     }
+
+    if(pos == 0 && head!=NULL){
+        head->setData(data);
+        cout << "Se ha editado correctamente la información del nodo";
+    }
+
     else{
         Node *aux = head;
         while(aux != NULL){

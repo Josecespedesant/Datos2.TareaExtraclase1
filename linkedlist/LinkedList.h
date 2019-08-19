@@ -14,6 +14,7 @@ private:
     int len;
     Node* head;
 
+
 public:
     LinkedList();
     void addFirst(int data);

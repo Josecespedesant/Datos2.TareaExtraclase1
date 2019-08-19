@@ -1,8 +1,12 @@
 //
 // Created by josecespedes on 4/8/19.
+// Basado en:
+// https://gist.github.com/harish-r/a7df7ce576dda35c9660
+// http://www.cplusplus.com/forum/general/1551/
 //
 
 #include "BinarySearchTree.h"
+#include <vector>
 
 BinarySearchTree::BinarySearchTree() {
     root = NULL;
@@ -18,6 +22,7 @@ void BinarySearchTree::insert(int data) {
 
     if(isEmpty()) {
         root = temp;
+        orderofentry->push_back(data);
     }
     else{
         Node* curr;
@@ -38,6 +43,7 @@ void BinarySearchTree::insert(int data) {
         }else{
             parent->setRight(temp);
         }
+        orderofentry->push_back(data);
     }
 }
 
@@ -162,3 +168,7 @@ void BinarySearchTree::inorder(Node *nodo) {
     }
     else return;
 }
+
+
+
+

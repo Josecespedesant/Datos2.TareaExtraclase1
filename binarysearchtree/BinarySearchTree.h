@@ -4,7 +4,7 @@
 
 #ifndef DATOS2_TAREA_EXTRACLASE_1_SERVER_BINARYSEARCHTREE_H
 #define DATOS2_TAREA_EXTRACLASE_1_SERVER_BINARYSEARCHTREE_H
-
+#include <vector>
 #include <iostream>
 #include <cstdlib>
 #include "Node.h"
@@ -13,6 +13,7 @@ using namespace std;
 class BinarySearchTree {
 private:
     Node* root;
+    vector<int> *orderofentry;
 
 public:
     BinarySearchTree();
@@ -21,7 +22,7 @@ public:
     void inorder(Node* nodo);
     void insert(int data);
     void remove(int data);
-
+    char* treeInOrderOfEntry();
 
 };
 
