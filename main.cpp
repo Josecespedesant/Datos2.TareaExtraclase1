@@ -9,6 +9,12 @@
 #include "binarysearchtree/BinarySearchTree.h"
 #define PORT 8080
 
+/**
+ * Método main del servidor.
+ * @param argc
+ * @param argv
+ * @return
+ */
 int main(int argc, char const *argv[]) {
     int server_fd, new_socket, valread;
     struct sockaddr_in address;
@@ -41,7 +47,7 @@ int main(int argc, char const *argv[]) {
         perror("bind failed");
         exit(EXIT_FAILURE);
     }
-    if (listen(server_fd, 3) < 0)
+    if (listen(server_fd, 9) < 0)
     {
         perror("listen");
         exit(EXIT_FAILURE);
@@ -152,6 +158,5 @@ int main(int argc, char const *argv[]) {
 
         sleep(1);
     }
-
 
 }

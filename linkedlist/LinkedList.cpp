@@ -1,10 +1,10 @@
-//
-// Created by josecespedes on 4/8/19.
-// Basadas en:
-// https://www.youtube.com/watch?v=H5lkmKkfjD0
-// https://www.codementor.io/codementorteam/a-comprehensive-guide-to-implementation-of-singly-linked-list-using-c_plus_plus-ondlm5azr
-//
-
+/**
+ * @author José Antono Céspedes Downing
+ * Declaración de la clase LinkedList
+ * Basada en:
+ * https://www.youtube.com/watch?v=H5lkmKkfjD0
+ * https://www.codementor.io/codementorteam/a-comprehensive-guide-to-implementation-of-singly-linked-list-using-c_plus_plus-ondlm5azr
+ */
 #include "LinkedList.h"
 #include <iostream>
 #include <cstdlib>
