@@ -8,17 +8,10 @@
 #include "BinarySearchTree.h"
 #include <vector>
 
-/**
- * Constructor de la clase BinarySearchTree
- */
 BinarySearchTree::BinarySearchTree() {
     root = NULL;
 }
 
-/**
- * Método que ingresa un nuevo valor en el arol
- * @param data
- */
 void BinarySearchTree::insert(int data) {
     Node* temp = new Node;
     Node* parent;
@@ -52,10 +45,6 @@ void BinarySearchTree::insert(int data) {
     }
 }
 
-/**
- * Método que recibe como parametro el valor a remover del arbol.
- * @param data
- */
 void BinarySearchTree::remove(int data) {
     bool found = false;
     if(isEmpty()){
@@ -164,17 +153,10 @@ void BinarySearchTree::remove(int data) {
     }
 }
 
-/**
- * Método publico para imprimir el arbol inorder.
- */
 void BinarySearchTree::print_inorder() {
     inorder(root);
 }
 
-/**
- * Método privado que imprime el árbol inorder.
- * @param nodo
- */
 void BinarySearchTree::inorder(Node *nodo) {
     if(nodo != NULL)
     {
@@ -184,3 +166,7 @@ void BinarySearchTree::inorder(Node *nodo) {
     }
     else return;
 }
+
+
+
+

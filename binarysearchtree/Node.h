@@ -9,16 +9,40 @@
 class Node {
 
 private:
-    int node_key;
-    Node* left;
-    Node* right;
+    int node_key; /** Información del nodo */
+    Node* left; /** Referencia al nodo de la izquierda */
+    Node* right; /** Referencia al nodo de la derecha */
 
 public:
+    /**
+     * Devuelve la referencia del nodo de la izquierda.
+     * @return left
+     */
     Node* getLeft();
+    /**
+     * Asigna la referencia del nodo de la izquierda.
+     * @param izq
+     */
     void setLeft(Node* izq);
+    /**
+     * Devuelve la referencia del nodo de la derecha.
+     * @return
+     */
     Node* getRight();
+    /**
+     * Asigna la referencia del nodo de la derecha.
+     * @param der
+     */
     void setRight(Node* der);
+    /**
+     * Devuelve la información del nodo.
+     * @return
+     */
     int getKey();
+    /**
+     * Asigna la información del nodo.
+     * @param key
+     */
     void setKey(int key);
 
 };

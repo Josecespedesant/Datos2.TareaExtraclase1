@@ -17,10 +17,6 @@ LinkedList::LinkedList() {
     len = 0;
 }
 
-/**
- * Obtiene el largo de la lista
- * @return len
- */
 int LinkedList::getLen() {
     return len;
 }
