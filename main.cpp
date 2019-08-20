@@ -6,6 +6,7 @@
 #include <string.h>
 #include <sstream>
 #include "linkedlist/LinkedList.h"
+#include "binarysearchtree/BinarySearchTree.h"
 #define PORT 8080
 
 int main(int argc, char const *argv[]) {
@@ -47,7 +48,7 @@ int main(int argc, char const *argv[]) {
     }
 
     LinkedList *l = new LinkedList();
-
+    BinarySearchTree *bst = new BinarySearchTree();
     for(;;){
 
         memset(buffer,0,255);
@@ -63,12 +64,41 @@ int main(int argc, char const *argv[]) {
             std::istringstream iss (cutstring);
             iss>>number;
             l->addFirst(number);
+            cout<<""<<endl;
             l->printList();
+            cout<<""<<endl;
         }
 
         if(strcmp(buffer, "delete") == 0){
             l->deleteFirst();
+            cout<<""<<endl;
             l->printList();
+            cout<<""<<endl;
+        }
+
+        if(buffer[0]=='a'){
+            string bufferstring = buffer;
+            string cutstring = bufferstring.substr(1, strlen(buffer)-1);
+            istringstream iss (cutstring);
+            int data;
+            iss>>data;
+            bst->insert(data);
+
+            cout<<""<<endl;
+            bst->print_inorder();
+            cout<<""<<endl;
+        }
+
+        if(buffer[0]=='m'){
+            string bufferstring = buffer;
+            string cutstring = bufferstring.substr(1, strlen(buffer)-1);
+            istringstream iss (cutstring);
+            int data;
+            iss>>data;
+            bst->remove(data);
+            cout<<""<<endl;
+            bst->print_inorder();
+            cout<<""<<endl;
         }
 
         if(buffer[0] == 'c'){
@@ -97,22 +127,31 @@ int main(int argc, char const *argv[]) {
             iss>>pos;
             iss2>>value;
 
-            cout<<pos<<endl;
-            cout<<value<<endl;
-
-            l->editByPos(pos,value);
+            l->editByPos(value,pos);
+            cout<<""<<endl;
             l->printList();
+            cout<<""<<endl;
         }
 
-        if(buffer[0]=='g'){
-
+        if(buffer[0] == 'g'){
+            string bufferstring = buffer;
+            string cutstring = bufferstring.substr(1, strlen(buffer)-1);
+            istringstream iss (cutstring);
+            int pos;
+            iss>>pos;
+            cout<<""<<endl;
+            cout<<l->getByPos(pos)<<endl;
+            cout<<""<<endl;
         }
 
         if(buffer[0] == 'p'){
+            cout<<""<<endl;
             l->printList();
+            cout<<""<<endl;
         }
 
         sleep(1);
     }
+
 
 }

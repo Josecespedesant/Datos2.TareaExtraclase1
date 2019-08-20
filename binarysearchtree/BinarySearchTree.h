@@ -13,7 +13,7 @@ using namespace std;
 class BinarySearchTree {
 private:
     Node* root;
-    vector<int> *orderofentry;
+
 
 public:
     BinarySearchTree();
@@ -22,7 +22,6 @@ public:
     void inorder(Node* nodo);
     void insert(int data);
     void remove(int data);
-    char* treeInOrderOfEntry();
 
 };
 

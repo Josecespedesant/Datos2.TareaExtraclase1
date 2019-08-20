@@ -23,6 +23,7 @@ public:
     int getByPos(int pos);
     void printList();
     int getLen();
+    void deleteList();
     ~LinkedList();
     char* listToChar();
 };

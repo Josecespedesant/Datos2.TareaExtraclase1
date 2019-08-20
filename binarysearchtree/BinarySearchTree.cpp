@@ -22,7 +22,6 @@ void BinarySearchTree::insert(int data) {
 
     if(isEmpty()) {
         root = temp;
-        orderofentry->push_back(data);
     }
     else{
         Node* curr;
@@ -43,7 +42,6 @@ void BinarySearchTree::insert(int data) {
         }else{
             parent->setRight(temp);
         }
-        orderofentry->push_back(data);
     }
 }
 

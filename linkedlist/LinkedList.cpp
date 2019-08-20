@@ -139,3 +139,16 @@ char* LinkedList::listToChar() {
     return finalchar;
 
 }
+
+void LinkedList::deleteList() {
+
+    Node* current = head;
+    Node* next;
+
+    while(current != NULL){
+        next = current->getNext();
+        free(current);
+        current = next;
+    }
+    head = NULL;
+}
