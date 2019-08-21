@@ -17,8 +17,7 @@ class LinkedList {
 
 private:
     int len; /** Largo de la lista */
-    Node* head; /** Primer nodo de la lista * /
-
+    Node* head; /** Primer nodo de la lista */
 
 public:
     /**

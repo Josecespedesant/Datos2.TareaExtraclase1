@@ -11,6 +11,8 @@
 
 /**
  * Método main del servidor.
+ * Basado en:
+ * https://www.geeksforgeeks.org/socket-programming-cc/
  * @param argc
  * @param argv
  * @return
@@ -20,7 +22,7 @@ int main(int argc, char const *argv[]) {
     struct sockaddr_in address;
     int opt = 1;
     int addrlen = sizeof(address);
-    char buffer[1024] = {0};
+    char buffer[4096] = {0};
 
     // Creating socket file descriptor
     if ((server_fd = socket(AF_INET, SOCK_STREAM, 0)) == 0)
@@ -61,7 +63,7 @@ int main(int argc, char const *argv[]) {
 
         new_socket = accept(server_fd, (struct sockaddr *)&address,
                                 (socklen_t*)&addrlen);
-        valread = read( new_socket , buffer, 1024);
+        valread = read( new_socket , buffer, 4096);
 
         if(buffer[0] == 'i'){
             string bufferstring = buffer;
